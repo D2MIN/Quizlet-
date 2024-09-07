@@ -1,0 +1,17 @@
+@use '../../App/ColorStyles.scss' as *;
+
+.Footer{
+    width: 100vw;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $dark-bg;
+}
+
+.footerContent{
+    color: white;
+    
+}

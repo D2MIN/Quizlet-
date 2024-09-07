@@ -1,0 +1,68 @@
+@use '../../App/ColorStyles.scss' as *;
+
+.MainBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyContent{
+    padding: 100px 0px;
+    width: 80vw;
+}
+
+.welcomeTitle{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 10vh;
+    font-family: monospace;
+
+    animation: Rainbow 2s infinite alternate-reverse;
+}
+
+
+@keyframes Rainbow{
+    from{
+        color: rgb(0, 0, 0);
+    }
+    to{
+        color: rgb(31, 31, 190);
+    }
+}
+
+.about{
+    width: 100%;
+}
+
+.description{
+    padding: 20px;
+    font-family: monospace;
+    
+    strong{
+        color: $strongColor;
+    }
+    
+    .title, .featureTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .featureTitle{
+        margin-top: 50px;
+    }
+    .feature{
+        list-style: none;
+        font-size: 20px;
+        margin: 20px 0px;
+        padding: 20px 50px;
+        border-bottom: 3px solid $strongColor;
+    }
+}
