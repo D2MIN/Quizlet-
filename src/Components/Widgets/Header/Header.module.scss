@@ -1,5 +1,7 @@
 @use '../../App/ColorStyles.scss' as *;
 
+
+
 .Header{
     height: 100px;
     width: 100vw;
@@ -22,4 +24,7 @@
     }
     a:hover{ color: $hover-link-color }
     
+    .active {
+        color: $hover-link-color;
+    }
 }

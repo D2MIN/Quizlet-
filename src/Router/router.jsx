@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Main } from "../Components/Pages/MainPage/Main";
+import { Header } from "../Components/Widgets/Header/Header";
 
 export const Router = createBrowserRouter([
     {
@@ -8,10 +9,10 @@ export const Router = createBrowserRouter([
     },
     {
         path : 'create-card',
-        element : <>Create card page</>
+        element : <Header/>
     },
     {
         path : 'exercises',
-        element : <>exercices page</>
+        element : <Header/>
     },
 ])
