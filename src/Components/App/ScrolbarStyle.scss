@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    width: 8px; /* ширина вертикального скроллбара */
+}
+
+/* Стиль ползунка (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: #0f8bff; /* цвет ползунка */
+    border-radius: 10px; /* закругленные углы */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000; /* цвет фона трека */
+}
