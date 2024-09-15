@@ -1,10 +1,51 @@
 @use '../../App/ColorStyles.scss' as *;
 
+$widthSelect : 230px;
+$heightSelect : 150px;
+
+.submitMassege{
+    position: absolute;
+    top: 20vh;
+    left: -150px;
+    
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(130, 255, 130);
+    padding: 10px;
+    font-size: 14px;
+    z-index: -1;
+}
+
+.submitMassege.submit{
+    animation: massegeMove 2s;
+}
+
+@keyframes massegeMove{
+    0%{
+        left: -150px;
+    }
+    50%{
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        left: 0px;
+        opacity: 0;
+    }
+}
+
 .CreateCard{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: monospace;
+
+}
+
+.createTitle{
+    margin: 10px;
+    color: $strongColor;
 }
 
 .createCardSection{
@@ -13,9 +54,11 @@
     justify-content: center;
     align-items: center;
     
+    box-shadow: 0px 10px 20px $strongColor;
+
     width: 500px;
     height: 500px;
-    border: 2px solid #333;
+    border: 2px solid $strongColor;
     border-radius: 10px;
 }
 
@@ -27,14 +70,14 @@
     justify-content: center;
     align-items: center;
 
-    width: 250px;
-    height: 150px;
+    width: $widthSelect;
+    height: $heightSelect;
 
     input{
         position: absolute;
         opacity: 0;
-        width: 250px;
-        height: 150px;
+        width: $widthSelect;
+        height: $heightSelect;
         z-index: 2;
     }
 
@@ -48,8 +91,8 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        min-width: 250px;
-        min-height: 150px;
+        min-width: $widthSelect;
+        min-height: $heightSelect;
         object-fit: cover;
     }
 }
@@ -70,6 +113,8 @@
 .selectBtn{
     height: 40px;
     width: 150px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .imgCard:hover .selectBtn{
@@ -80,4 +125,33 @@
 
 .button{
     margin: 20px 0px;
+}
+
+.helper{
+    margin: 100px 0px;
+    
+    strong{
+        color: $strongColor;
+    }
+}
+
+.helperList{
+    list-style:decimal;
+    margin: 20px 20px;
+
+    li{
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+}
+
+.examples{
+    margin-top: 50px;
+    max-width: 70vw;
+    h1{
+        margin: 10px 0px;
+    }
+    p{       
+        font-size: 14px;
+    }
 }
