@@ -9,10 +9,10 @@ export function Header(){
                 <Link to={"/"}><h3>Главная</h3></Link>
             </div>
             <div className={`${style.createCardLink} Link`}>
-                <Link to={'create-card'}><h3>Сделать карточку</h3></Link>
+                <Link to={'/create-card'}><h3>Сделать карточку</h3></Link>
             </div>
             <div className={`${style.exercisesLink} Link`}>
-                <Link to={'exercises'}><h3>Упражнения</h3></Link>
+                <Link to={'/exercises'}><h3>Упражнения</h3></Link>
             </div>
         </div>
     );
