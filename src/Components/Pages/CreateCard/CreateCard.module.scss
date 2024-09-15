@@ -1,0 +1,83 @@
+@use '../../App/ColorStyles.scss' as *;
+
+.CreateCard{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: monospace;
+}
+
+.createCardSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 500px;
+    height: 500px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.imgCard{
+    border: 2px solid #333;
+    border-radius: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 150px;
+
+    input{
+        position: absolute;
+        opacity: 0;
+        width: 250px;
+        height: 150px;
+        z-index: 2;
+    }
+
+    overflow: hidden;
+}
+
+.imgPrev{
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        min-width: 250px;
+        min-height: 150px;
+        object-fit: cover;
+    }
+}
+
+.selectTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p{
+        font-size: 14px;
+        color: rgb(65, 65, 65);
+    }
+}
+
+.selectBtn{
+    height: 40px;
+    width: 150px;
+}
+
+.imgCard:hover .selectBtn{
+    transition: all 1s;
+    background-color: $strongColor;
+    color: white;
+}
+
+.button{
+    margin: 20px 0px;
+}
