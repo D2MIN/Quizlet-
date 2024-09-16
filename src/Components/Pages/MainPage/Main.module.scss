@@ -7,6 +7,10 @@
     overflow: hidden;
 }
 
+.body{
+    min-height: calc(100vh - 100px);
+}
+
 .header{
     height: 100px;
 }

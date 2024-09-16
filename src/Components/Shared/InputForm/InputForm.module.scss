@@ -1,0 +1,26 @@
+@use '../../App/ColorStyles.scss' as *;
+
+.InputForm{
+    margin: 10px;
+}
+
+.title{
+    font-size: 22px;
+    font-family: monospace;
+    color: $hover-link-color;
+    font-weight: bold;
+}
+
+.input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.input:focus{
+    background-color: $active-input;
+    color: white;
+}

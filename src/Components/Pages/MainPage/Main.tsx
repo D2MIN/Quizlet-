@@ -1,3 +1,4 @@
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import { Footer } from "../../Widgets/Footer/Footer";
 import { Header } from "../../Widgets/Header/Header";
 import { MainBody } from "../../Widgets/MainBody/MainBody";
@@ -11,7 +12,8 @@ export function Main(){
                 <Header/>
             </div>
             <div className={style.body}>
-                <MainBody/>
+                <ScrollRestoration/>
+                <Outlet />
             </div>
             <div className={style.footer}>
                 <Footer/>
